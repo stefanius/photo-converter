@@ -80,6 +80,11 @@ class Image
         return $this->height;
     }
 
+    public function getSource()
+    {
+        return imagecreatefromjpeg($this->pathAndFileName);
+    }
+
     protected function readImageSizeFromFile()
     {
         list($width, $height) = getimagesize($this->pathAndFileName);
