@@ -1,0 +1,4 @@
+stef_photo_converter:
+    resource: "@StefPhotoConverterBundle/Resources/config/routing.yml"
+    prefix:   /
+

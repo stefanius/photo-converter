@@ -1,0 +1,4 @@
+services:
+#    stef_photo_converter.example:
+#        class: Stef\PhotoConverterBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

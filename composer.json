@@ -1,0 +1,42 @@
+{
+    "name": "stef/photo-converter",
+    "license": "Not decided yet",
+    "type": "project",
+    "description": "Easy to use converter for images",
+    "autoload": {
+        "psr-0": { "": "src/" }
+    },
+    "prefer-stable": true,
+    "minimum-stability" : "dev",
+    "require": {
+        "php": ">=5.5",
+        "ext-gd": "*",
+        "symfony/symfony": "~2.7",
+        "pda/pheanstalk": "~3.0",
+        "treehouselabs/worker-bundle": "~1.0",
+        "stef/manipulation": "dev-master",
+        "stef/slug-manipulation": "dev-master",
+        "stef/key-value-manipulation": "dev-master",
+        "symfony/monolog-bundle": "~2.4",
+        "sensio/generator-bundle": "^3.0@dev"
+    },
+    "scripts": {
+      "post-root-package-install": [
+        "SymfonyStandard\\Composer::hookRootPackageInstall"
+      ]
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "extra": {
+        "symfony-app-dir": "app",
+        "incenteev-parameters": {
+            "file": "app/config/parameters.yml"
+        }
+    },
+    "autoload": {
+      "psr-4": {
+        "Stef\\PhotoConverterBundle\\": "src/Stef/PhotoConverterBundle/"
+      }
+    }
+}
